@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios - Sabores de Corea</title>
+  <link rel="shortcut icon" href="/imagenes/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="servicios.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <header class="header">
+  <div class="logo">
+    <img src="imagenes/logo.png" alt="Sabores de Corea">
+  </div>
+
+  <!-- Barra de búsqueda -->
+  <form class="search-bar">
+    <input type="text" placeholder="Buscar...">
+    <button type="submit">🔍</button>
+  </form>
+
+  <nav class="nav">
+    <a href="index.html">Inicio</a>
+    <a href="menu.html" class="current">Menú</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="index.html#reservas">Reservas</a>
+  </nav>
+</header>
+
+<section class="servicios">
+  <h2>Nuestros Servicios</h2>
+  <p>Descubre lo que Sabores de Corea tiene para ofrecerte además de nuestra deliciosa gastronomía.</p>
+
+  <div class="servicios-grid">
+    <!-- Servicio 1 -->
+    <a href="#modal1" class="servicio-card">
+      <i class="fas fa-utensils"></i>
+      <h3>Servicios de comida</h3>
+      <p>Servicio de catering para eventos privados y corporativos con los mejores sabores de Corea.</p>
+    </a>
+
+    <!-- Servicio 2 -->
+    <a href="#modal2" class="servicio-card">
+      <i class="fas fa-motorcycle"></i>
+      <h3>Domicilios</h3>
+      <p>Recibe tus platos favoritos directamente en tu casa con nuestro servicio de entrega rápida.</p>
+    </a>
+
+    <!-- Servicio 3 -->
+    <a href="#modal3" class="servicio-card">
+      <i class="fas fa-chalkboard-teacher"></i>
+      <h3>Clases de Cocina</h3>
+      <p>Aprende a preparar auténticos platos coreanos con nuestros chefs expertos.</p>
+    </a>
+
+    <!-- Servicio 4 -->
+    <a href="#modal4" class="servicio-card">
+      <i class="fas fa-glass-cheers"></i>
+      <h3>Eventos</h3>
+      <p>Organizamos experiencias gastronómicas únicas para celebraciones especiales.</p>
+    </a>
+  </div>
+</section>
+
+<!-- ====== MODALES ====== -->
+
+<!-- Modal Servicio 1: Comida -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <a href="#" class="cerrar">&times;</a>
+    <h3>Servicios de comida</h3>
+    <form>
+      <label>Nombre:</label>
+      <input type="text" required>
+      <label>Correo:</label>
+      <input type="email" required>
+      <label>Tipo de evento:</label>
+      <input type="text" placeholder="Boda, empresa, cumpleaños..." required>
+      <label>Número de invitados:</label>
+      <input type="number" min="1" required>
+      <label>Comentarios:</label>
+      <textarea></textarea>
+      <button type="submit">Solicitar Catering</button>
+    </form>
+  </div>
+</div>
+
+<!-- Modal Servicio 2: Domicilios -->
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <a href="#" class="cerrar">&times;</a>
+    <h3>Domicilios</h3>
+    <form>
+      <label>Nombre:</label>
+      <input type="text" required>
+      <label>Dirección:</label>
+      <input type="text" required>
+      <label>Teléfono:</label>
+      <input type="tel" required>
+      <label>Plato deseado:</label>
+      <input type="text" required>
+      <label>Cantidad:</label>
+      <input type="number" min="1" required>
+      <button type="submit">Hacer Pedido</button>
+    </form>
+  </div>
+</div>
+
+<!-- Modal Servicio 3: Clases de Cocina -->
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <a href="#" class="cerrar">&times;</a>
+    <h3>Clases de Cocina</h3>
+    <form>
+      <label>Nombre:</label>
+      <input type="text" required>
+      <label>Correo:</label>
+      <input type="email" required>
+      <label>Teléfono:</label>
+      <input type="tel">
+      <label>Nivel de cocina:</label>
+      <select required>
+        <option value="">Selecciona</option>
+        <option>Básico</option>
+        <option>Intermedio</option>
+        <option>Avanzado</option>
+      </select>
+      <label>Fecha preferida:</label>
+      <input type="date" required>
+      <button type="submit">Inscribirme</button>
+    </form>
+  </div>
+</div>
+
+<!-- Modal Servicio 4: Eventos -->
+<div id="modal4" class="modal">
+  <div class="modal-content">
+    <a href="#" class="cerrar">&times;</a>
+    <h3>Eventos</h3>
+    <form>
+      <label>Nombre:</label>
+      <input type="text" required>
+      <label>Correo:</label>
+      <input type="email" required>
+      <label>Teléfono:</label>
+      <input type="tel" required>
+      <label>Tipo de evento:</label>
+      <input type="text" placeholder="Cumpleaños, aniversario..." required>
+      <label>Fecha del evento:</label>
+      <input type="date" required>
+      <label>Comentarios:</label>
+      <textarea></textarea>
+      <button type="submit">Reservar Evento</button>
+    </form>
+  </div>
+</div>
+
+  <footer>
+    <div class="container footer">
+      <p>&copy; 2025 Sabores de Corea</p>
+      <div class="social-links">
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://twitter.com" target="_blank">X</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+        <a href="https://wa.me/573001234567" target="_blank">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
